@@ -2,10 +2,10 @@ import { styled, AppBar, Toolbar, Grid } from "@mui/material";
 
 export const Appbar = styled(AppBar)(({ theme }) => ({
     display: "flex",
-    background: theme.palette.secondary.main,
+    background: theme.palette.secondary.dark,
     position: "fixed",
     zIndex: 2,
-    height: theme.spacing(5),
+    height: theme.spacing(6),
     alignItems: "center",
     justifyContent: "center"
 }));
@@ -47,8 +47,8 @@ export const GridFinal = styled(GridCentro)({
 });
 
 export const LogoImagem = styled("img")(({ theme }) => ({
-    width: theme.spacing(9.375),
+    width: theme.spacing(10),
     [theme.breakpoints.down("md")]: {
         width: theme.spacing(5)
-    }
+    },
 }));

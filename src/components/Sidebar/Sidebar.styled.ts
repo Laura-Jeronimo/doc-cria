@@ -5,8 +5,8 @@ export const SidebarWrapper = styled("div")(({ theme }) => ({
     position: "fixed",
     width: "18%",
     height: "100%",
-    marginTop: theme.spacing(5),
-    background: theme.palette.secondary.dark,
+    marginTop: theme.spacing(6),
+    background: theme.palette.secondary.light,
     color: theme.palette.secondary.contrastText,
     "&::after": {
         content: '""',
@@ -19,11 +19,10 @@ export const SidebarWrapper = styled("div")(({ theme }) => ({
     },
 }));
 
-export const CollapseItem = styled(Collapse)(({theme}) => ({
-    paddingLeft:theme.spacing(1.5),
+export const CollapseItem = styled(Collapse)(({ theme }) => ({
+    paddingTop: theme.spacing(1.5)
 }))
 
-export const Item = styled(Typography)(({theme}) => ({
-    paddingLeft:theme.spacing(2),
-    paddinTop: theme.spacing(2)
+export const Item = styled(Typography)(({ theme }) => ({
+    paddingLeft: theme.spacing(2),
 }))

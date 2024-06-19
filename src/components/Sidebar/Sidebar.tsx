@@ -1,5 +1,5 @@
 // import { useScreenSize } from "utils/useScreenSize"
-import { Grid } from "@mui/material"
+import { Typography } from "@mui/material"
 import * as Styled from "./Sidebar.styled"
 
 export const Sidebar = () => {
@@ -9,7 +9,9 @@ export const Sidebar = () => {
     return (
         <Styled.SidebarWrapper>
             <Styled.CollapseItem in={true} timeout={'auto'} unmountOnExit>
-                <Styled.Item></Styled.Item>
+                <Styled.Item>
+                    <Typography>Sobre o CRIA</Typography>
+                </Styled.Item>
             </Styled.CollapseItem>
         </Styled.SidebarWrapper>
     )
