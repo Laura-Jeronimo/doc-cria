@@ -1,5 +1,5 @@
-import { Card as CardMui, Typography } from "@mui/material";
-import { alpha, styled } from "@mui/material/styles";
+import { Card as CardMui } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 export const StyledCard = styled(CardMui)(({ theme }) => ({
     borderRadius: theme.spacing(2),
@@ -7,7 +7,7 @@ export const StyledCard = styled(CardMui)(({ theme }) => ({
     border: `${theme.spacing(0.02)} solid ${theme.palette.grey[300]}`,
     padding: theme.spacing(2),
     margin: theme.spacing(0.5),
-    [theme.breakpoints.down('sm')]:{
+    [theme.breakpoints.down('sm')]: {
         width: "100%"
     }
 }));

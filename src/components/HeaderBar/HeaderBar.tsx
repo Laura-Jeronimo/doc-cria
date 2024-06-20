@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material"
+import { Box } from "@mui/material"
 import * as Styled from "./HeaderBar.styled"
 import Logo from "assets/Logo/LogoExtenso.svg"
 import { useNavigate } from "react-router-dom"
