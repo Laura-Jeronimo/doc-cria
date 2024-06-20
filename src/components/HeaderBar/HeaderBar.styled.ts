@@ -1,11 +1,11 @@
-import { styled, AppBar, Toolbar, Grid } from "@mui/material";
+import { styled, alpha, AppBar, Toolbar, Grid, InputBase, Select } from "@mui/material";
 
 export const Appbar = styled(AppBar)(({ theme }) => ({
     display: "flex",
     background: theme.palette.secondary.dark,
     position: "fixed",
     zIndex: 2,
-    height: theme.spacing(6),
+    height: theme.spacing(5),
     alignItems: "center",
     justifyContent: "center"
 }));
@@ -40,7 +40,7 @@ export const GridCentro = styled(Grid)({
     alignItems: "center"
 });
 
-export const GridFinal = styled(GridCentro)({
+export const GridInicial = styled(GridCentro)({
     justifyContent: "space-between",
     position: "relative",
     height: "100%"

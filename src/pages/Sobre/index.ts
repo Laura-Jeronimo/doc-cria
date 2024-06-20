@@ -1,0 +1,2 @@
+
+export { Sobre } from './Sobre';

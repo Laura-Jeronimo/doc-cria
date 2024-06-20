@@ -1,0 +1,2 @@
+
+export { Autenticacao } from './Autenticacao'
