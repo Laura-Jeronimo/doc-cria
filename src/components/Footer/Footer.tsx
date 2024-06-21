@@ -9,34 +9,46 @@ export const Footer = () => {
             <Styled.GridLogo>
                 <Styled.LogoImagem src={Logo} />
                 <Styled.Icons>
-                    <BiLogoInstagram style={{
-                        background: 'linear-gradient(to top right, #833ab4, #fd1d1d, #fcb045)',
-                        borderRadius: '50%',
-                        padding: '4px',
-                        color: 'white',
-                        fontSize: '32px',
-                    }} href="https://www.instagram.com/cria.redacao/?utm_source=site&utm_medium=rodape" />
-                    <BiLogoTwitter style={{
-                        background: Color.blue[800],
-                        borderRadius: '50%',
-                        padding: '4px',
-                        color: 'white',
-                        fontSize: '32px',
-                    }} href="https://twitter.com/criaredacao/?utm_source=site&utm_medium=rodape" />
-                    <BiLogoTiktok style={{
-                        background: Color.grey[900],
-                        borderRadius: '50%',
-                        padding: '4px',
-                        color: 'white',
-                        fontSize: '32px',
-                    }} href="https://www.tiktok.com/@cria.redacao/?utm_source=site&utm_medium=rodape" />
-                    <BiLogoLinkedin style={{
-                        background: Color.blue[500],
-                        borderRadius: '50%',
-                        padding: '4px',
-                        color: 'white',
-                        fontSize: '32px',
-                    }} href="https://www.linkedin.com/company/cria-redacao/" />
+                    <Link target="_blank" href="https://www.instagram.com/cria.redacao/?utm_source=site&utm_medium=rodape">
+                        <BiLogoInstagram style={{
+                            background: 'linear-gradient(to top right, #833ab4, #fd1d1d, #fcb045)',
+                            borderRadius: '50%',
+                            padding: '4px',
+                            color: 'white',
+                            fontSize: '32px',
+                            cursor: 'pointer'
+                        }} />
+                    </Link>
+                    <Link target="_blank" href="https://twitter.com/criaredacao/?utm_source=site&utm_medium=rodape">
+                        <BiLogoTwitter style={{
+                            background: Color.blue[800],
+                            borderRadius: '50%',
+                            padding: '4px',
+                            color: 'white',
+                            fontSize: '32px',
+                            cursor: 'pointer'
+                        }} />
+                    </Link>
+                    <Link target="_blank" href="https://www.tiktok.com/@cria.redacao/?utm_source=site&utm_medium=rodape">
+                        <BiLogoTiktok style={{
+                            background: Color.grey[900],
+                            borderRadius: '50%',
+                            padding: '4px',
+                            color: 'white',
+                            fontSize: '32px',
+                            cursor: 'pointer'
+                        }} />
+                    </Link>
+                    <Link target="_blank" href="https://www.linkedin.com/company/cria-redacao/">
+                        <BiLogoLinkedin style={{
+                            background: Color.blue[500],
+                            borderRadius: '50%',
+                            padding: '4px',
+                            color: 'white',
+                            fontSize: '32px',
+                            cursor: 'pointer'
+                        }} />
+                    </Link>
                 </Styled.Icons>
             </Styled.GridLogo>
             <Styled.Infos>
