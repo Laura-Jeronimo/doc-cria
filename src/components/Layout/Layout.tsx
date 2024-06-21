@@ -3,6 +3,7 @@ import * as Styled from './Layout.styled';
 import { HeaderBar } from "components/HeaderBar";
 import { Sidebar } from "components/Sidebar";
 import { useScreenSize } from "utils/useScreenSize";
+import { Footer } from "components/Footer";
 
 export function Layout({ children }: LayoutProps) {
 
@@ -10,14 +11,16 @@ export function Layout({ children }: LayoutProps) {
 
     return (
         <>
-
             <Styled.wrapperContainer>
                 <HeaderBar />
                 <Styled.wrapperMainDiv>
                     {isLargeScreen && <Sidebar />}
-                    <Styled.wrapper_contentDiv>
-                        {children}
-                    </Styled.wrapper_contentDiv>
+                    <Styled.wrapper_Footer>
+                        <Styled.wrapper_contentDiv>
+                            {children}
+                        </Styled.wrapper_contentDiv>
+                        <Footer />
+                    </Styled.wrapper_Footer>
                 </Styled.wrapperMainDiv>
             </Styled.wrapperContainer>
         </>
