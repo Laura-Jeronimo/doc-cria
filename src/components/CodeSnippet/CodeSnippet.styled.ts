@@ -1,4 +1,4 @@
-import { Tab, alpha, styled } from "@mui/material";
+import { Tab, alpha, styled, Stack } from "@mui/material";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 export const StyledDiv = styled('div')(({ theme }) => ({
@@ -6,6 +6,17 @@ export const StyledDiv = styled('div')(({ theme }) => ({
     background: alpha(theme.palette.grey[200], 0.4),
     boxShadow: 'rgba(0, 0, 0, 0.25) 0px 0px 32px 0px',
     padding: theme.spacing(2)
+}));
+
+export const GridCode = styled(Stack)(({ theme }) => ({
+    justifyContent: 'flex-start',
+    [theme.breakpoints.down('lg')]:{
+        marginTop: theme.spacing(1)
+    },
+    [theme.breakpoints.up('md')]:{
+        width: '52%',
+        padding: theme.spacing(1),
+    }
 }));
 
 export const TabLanguage = styled(Tab)<{ active: boolean }>(({ theme, active }) => ({

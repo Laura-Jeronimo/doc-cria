@@ -36,14 +36,6 @@ export const ParameterTitle = styled(Typography)(({ theme }) => ({
     marginTop: theme.spacing(2),
 }));
 
-export const GridCode = styled(Stack)(({ theme }) => ({
-    justifyContent: 'flex-start',
-    padding: theme.spacing(1),
-    [theme.breakpoints.up('md')]:{
-        width: '52%'
-    }
-}));
-
 export const ResponseAccordion = styled(Accordion)(({theme}) => ({
     background: alpha(theme.palette.grey[200], 0.4),
     border: `1px solid ${theme.palette.grey[300]}`,

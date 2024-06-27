@@ -26,3 +26,9 @@ export const ResponseDetails = styled(AccordionDetails)(({theme}) => ({
     fontWeight: 500,
     borderTop: `1px solid ${theme.palette.grey[300]}`,
 }));
+
+export const Title = styled(Typography)(({ theme }) => ({
+    fontWeight: 600,
+    color: theme.palette.grey[800],
+    marginTop: theme.spacing(2),
+}));

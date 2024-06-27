@@ -1,7 +1,18 @@
+import { Parameter } from "components/Parameters/Parameters.types";
+
+// export interface Snippet {
+//     language: string;
+//     label: string;
+//     code: string;
+// }
+
+// export interface CodeSnippetProps {
+//     snippets: Snippet[]
+// }
+
 export interface CodeSnippetProps {
-    snippets: {
-        language: string;
-        label: string;
-        code: string;
-    }[];
+    url: string;
+    method: string;
+    headers: Parameter[]
+    payload?: Parameter[]
 }

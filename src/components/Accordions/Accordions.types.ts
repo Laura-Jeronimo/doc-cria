@@ -1,9 +1,10 @@
 
+export interface Response {
+    response: number;
+    description: string;
+    details?: string;
+}
 
 export interface AccordionsProps {
-    responses: {
-        response: number;
-        description: string;
-        details?: string;
-    }[];
+    responses: Response[];
 }

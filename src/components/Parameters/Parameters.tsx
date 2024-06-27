@@ -1,17 +1,21 @@
-import { Chip, Divider, Grid, Typography } from "@mui/material"
+import { Grid } from "@mui/material"
 import * as Styled from './Parameters.styled'
-import { ParametersProps } from "./Parameters.types"
+import { Parameter, ParametersProps } from "./Parameters.types"
 
-export const Parameters = ({ parameter, type, description }: ParametersProps) => {
+export const Parameters = ({ parameters, title }: ParametersProps) => {
     return (
         <>
-            <Styled.GridParameter>
-                <Grid>
-                    <Styled.Parameter>{parameter}</Styled.Parameter>
-                    {type && <Styled.Type>{type}</Styled.Type>}
-                </Grid>
-                <Styled.Descricao>{description}</Styled.Descricao>
-            </Styled.GridParameter>
+            <Styled.ParameterTitle>{title}</Styled.ParameterTitle>
+            {parameters.map((parameter: Parameter) => (
+                <Styled.GridParameter>
+
+                    <Grid>
+                        <Styled.Parameter>{parameter.parameter}</Styled.Parameter>
+                        {parameter.type && <Styled.Type>{parameter.type}</Styled.Type>}
+                    </Grid>
+                    <Styled.Descricao>{parameter.description}</Styled.Descricao>
+                </Styled.GridParameter>
+            ))} 
         </>
     )
 }

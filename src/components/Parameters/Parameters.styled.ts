@@ -1,7 +1,7 @@
-import { Chip, Grid, Typography, alpha, styled } from "@mui/material";
+import { Grid, Typography, styled } from "@mui/material";
 
 
-export const GridParameter = styled(Grid)(({theme}) => ({
+export const GridParameter = styled(Grid)(({ theme }) => ({
     marginTop: theme.spacing(0.5),
     display: 'flex',
     justifyContent: 'space-between',
@@ -11,17 +11,23 @@ export const GridParameter = styled(Grid)(({theme}) => ({
     padding: theme.spacing(0.5)
 }));
 
-export const Parameter = styled(Typography)(({theme}) => ({
+export const Parameter = styled(Typography)(({ theme }) => ({
     fontWeight: 500,
 }))
 
-export const Type = styled(Typography)(({theme}) => ({
+export const Type = styled(Typography)(({ theme }) => ({
     color: theme.palette.grey[500],
     fontWeight: 500,
     fontSize: theme.spacing(0.8)
 }));
 
-export const Descricao = styled(Typography)(({theme}) => ({
+export const Descricao = styled(Typography)(({ theme }) => ({
     textAlign: 'right',
     marginLeft: theme.spacing(1)
+}));
+
+export const ParameterTitle = styled(Typography)(({ theme }) => ({
+    fontWeight: 600,
+    color: theme.palette.grey[800],
+    marginTop: theme.spacing(2),
 }));
