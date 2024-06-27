@@ -4,3 +4,7 @@ export interface RequestProps {
     name: string;
     description: string;
 }
+
+export interface MethodProps {
+    method: string;
+}

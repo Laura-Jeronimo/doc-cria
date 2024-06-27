@@ -1,8 +1,12 @@
 import { Grid } from "@mui/material"
 import * as Styled from './Sobre.styled'
 import { CardApis } from "./CardApis"
+import { useNavigate } from "react-router-dom"
 
 export const Sobre = () => {
+
+    const navigate = useNavigate();
+
     return (
         <Grid container>
             <Styled.Titulo>Sobre o CRIA</Styled.Titulo>
@@ -14,7 +18,7 @@ export const Sobre = () => {
             <Styled.Subtitulo>Informações gerais e arquitetura</Styled.Subtitulo>
             <Styled.Paragrafo>O CRIA integra aprendizado de máquinas, aprendizado profundo, processamento de linguagem natural e comunicação web. Devido à complexidade das tecnologias utilizadas, foi construído usando micro-serviços, visando melhor performance e segurança para os usuários. Abaixo estão listados os subdomínios acessíveis da URL <Styled.Url>cria.net.br</Styled.Url>. </Styled.Paragrafo>
             <Styled.GridCards>
-                <CardApis icon={<Styled.LoginIcon />} title="API Login & Gateway" url="https://api.cria.net.br/api/v1" description="API para login e gateway de correções." />
+                <CardApis onClick={() => navigate('/autenticacao')} icon={<Styled.LoginIcon />} title="API Login & Gateway" url="https://api.cria.net.br/api/v1" description="API para login e gateway de correções." />
                 <CardApis icon={<Styled.Comp1Icon />} title="Competência 1" url="https://apicompetenciaum.cria.net.br/api/v1" description="Norma culta da língua portuguesa, retorna desvios em ortografia, gramática, gerundismo, nomes próprios, uso de vírgula, gírias, entre outros." />
                 <CardApis icon={<Styled.Comp2Icon />} title="Competência 2" url="https://apicompetenciadois.cria.net.br/api/v1" description="Estrutura do Gênero Textual e Adesão ao Tema." />
                 <CardApis icon={<Styled.Comp3Icon />} title="Competência 3" url="https://apicompetenciatres.cria.net.br/api/v1" description="Avaliação de vocabulário, detecção de cópias de textos motivadores, modelos prontos e redações nota mil." />

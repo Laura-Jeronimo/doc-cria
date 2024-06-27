@@ -44,6 +44,7 @@ export const wrapper_contentDiv = styled('div')({
     flexBasis: "100%",
     paddingRight: "4%",
     paddingLeft: "4%",
+    paddingBottom: '20px',
 
     ['@media (min-width: 1200px)']: {
         width: '100%',

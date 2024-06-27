@@ -1,6 +1,6 @@
 
 export interface ParametersProps {
     parameter: string;
-    type: string;
+    type?: string;
     description: string;
 }
