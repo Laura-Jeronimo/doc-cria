@@ -4,6 +4,7 @@ import { HeaderBar } from "components/HeaderBar";
 import { Sidebar } from "components/Sidebar";
 import { useScreenSize } from "utils/useScreenSize";
 import { Footer } from "components/Footer";
+import { SearchProvider } from "components/SearchBar/SearchContext";
 
 export function Layout({ children }: LayoutProps) {
 
@@ -11,6 +12,7 @@ export function Layout({ children }: LayoutProps) {
 
     return (
         <>
+        <SearchProvider>
             <Styled.wrapperContainer>
                 <HeaderBar />
                 <Styled.wrapperMainDiv>
@@ -23,6 +25,7 @@ export function Layout({ children }: LayoutProps) {
                     </Styled.wrapper_Footer>
                 </Styled.wrapperMainDiv>
             </Styled.wrapperContainer>
+        </SearchProvider>
         </>
     );
 }
