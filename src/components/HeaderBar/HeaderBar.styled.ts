@@ -1,4 +1,5 @@
-import { styled, alpha, AppBar, Toolbar, Grid, InputBase, Select } from "@mui/material";
+import { styled, alpha, AppBar, Toolbar, Grid, InputBase, Select, IconButton } from "@mui/material";
+import { RiMenuLine } from "react-icons/ri";
 
 export const Appbar = styled(AppBar)(({ theme }) => ({
     display: "flex",
@@ -49,6 +50,16 @@ export const GridInicial = styled(GridCentro)({
 export const LogoImagem = styled("img")(({ theme }) => ({
     width: theme.spacing(10),
     [theme.breakpoints.down("md")]: {
-        width: theme.spacing(5)
+        width: theme.spacing(6)
     },
 }));
+
+export const Icon = styled(IconButton)(({ theme }) => ({
+    padding: "0",
+    margin: "0",
+    color: theme.palette.secondary.main,
+}));
+
+export const IconResponsivo = styled(RiMenuLine)({
+    color: "white"
+});

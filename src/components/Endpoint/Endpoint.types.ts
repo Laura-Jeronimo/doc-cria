@@ -10,5 +10,6 @@ export interface EndpointProps {
     headers: Parameter[],
     parameters?: Parameter[],
     responses?: Response[],
+    example?: string;
 }
 

@@ -37,6 +37,7 @@ export const Sidebar = () => {
                     <Styled.GridLista onClick={handleComp1Click}>
                         <Styled.ItemListaTexto
                             isActive={false}
+                            onClick={() => navigate("/competencia-um")}
                             primary="Competência 1" />
                         {openComp1 ? (
                             <Styled.IconeAbrir />
@@ -50,6 +51,7 @@ export const Sidebar = () => {
                     <Styled.GridLista onClick={handleComp1Click}>
                         <Styled.ItemListaTexto
                             isActive={false}
+                            onClick={() => navigate("/competencia-dois")}
                             primary="Competência 2" />
                         {openComp1 ? (
                             <Styled.IconeAbrir />
@@ -63,6 +65,7 @@ export const Sidebar = () => {
                     <Styled.GridLista onClick={handleComp1Click}>
                         <Styled.ItemListaTexto
                             isActive={false}
+                            onClick={() => navigate("/competencia-tres")}
                             primary="Competência 3" />
                         {openComp1 ? (
                             <Styled.IconeAbrir />
@@ -76,6 +79,7 @@ export const Sidebar = () => {
                     <Styled.GridLista onClick={handleComp1Click}>
                         <Styled.ItemListaTexto
                             isActive={false}
+                            onClick={() => navigate("/competencia-quatro")}
                             primary="Competência 4" />
                         {openComp1 ? (
                             <Styled.IconeAbrir />
@@ -89,6 +93,7 @@ export const Sidebar = () => {
                     <Styled.GridLista onClick={handleComp1Click}>
                         <Styled.ItemListaTexto
                             isActive={false}
+                            onClick={() => navigate("/competencia-cinco")}
                             primary="Competência 5" />
                         {openComp1 ? (
                             <Styled.IconeAbrir />

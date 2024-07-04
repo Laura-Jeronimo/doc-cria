@@ -15,10 +15,10 @@ ${headersString}\n`
             code += `${payloadString}`
         }
         else if (isJsonContentdescription) {
-            const payloadString = payload.map(p => `"${p.parameter}": ${p.description}`).join(',\n');
+            const payloadString = payload.map(p => `"${p.parameter}": ${p.description}`).join(',\n\t');
             code += `--data '{
-                ${payloadString}
-            }'`
+    ${payloadString}
+}'`
         }
     }
 
@@ -43,8 +43,8 @@ let data = qs.stringify({
         }
         else if (isJsonContentdescription) {
             code += `let data = JSON.stringify({
-                ${payloadString}
-            });`
+    ${payloadString}
+});`
         }
     }
 
@@ -56,7 +56,7 @@ let config = {
     url: '${url}',
     headers: {
         ${headersString}
-    }${payload ? ',\n\t\tdata: data\n};' : '};'}
+}${payload ? ',\n\t\tdata: data\n};' : '};'}
 
 axios.request(config).then((response) => {
     console.log(JSON.stringify(response.data));
@@ -76,8 +76,8 @@ export function PythonCode(url: string, method: string, headers: Parameter[], pa
     const isUrlEncodedContentdescription = headers.some(h => h.parameter === 'Content-Type' && h.description === 'application/x-www-form-urlencoded');
 
     let code = `import requests
-    ${payload && isJsonContentdescription ? 'import json' : ''}
-url = ${url}\n\n`
+${payload && isJsonContentdescription ? 'import json' : ''}
+url = "${url}"\n\n`
 
     if (payload) {
         if (isUrlEncodedContentdescription) {
@@ -85,10 +85,10 @@ url = ${url}\n\n`
             code += `payload = '${payloadString}'\n\n`
         }
         else if (isJsonContentdescription) {
-            const payloadString = payload.map(p => `"${p.parameter}": "${p.description}"`).join(',\n');
+            const payloadString = payload.map(p => `"${p.parameter}": "${p.description}"`).join(',\n\t');
             code += `payload = json.dumps({
-                ${payloadString}
-            })\n\n`
+    ${payloadString}
+})\n\n`
         }
     }
 
@@ -130,10 +130,10 @@ curl_setopt_array($curl, array(
             code += `\tCURLOPT_POSTFIELDS => ${payloadString}\n`
         }
         if (isJsonContentdescription) {
-            const payloadString = payload.map(p => `"${p.parameter}": "${p.description}"`).join(',\n\t');
-            code += `CURLOPT_POSTFIELDS => '{
-            ${payloadString}
-            }'\n`
+            const payloadString = payload.map(p => `"${p.parameter}": "${p.description}"`).join(',\n\t\t');
+            code += `\tCURLOPT_POSTFIELDS => '{
+        ${payloadString}
+    }'\n`
         }
     }
 

@@ -3,6 +3,7 @@ import *  as Styled from "./Footer.styled"
 import { BiLogoInstagram, BiLogoLinkedin, BiLogoTiktok, BiLogoTwitter } from "react-icons/bi";
 import * as Color from "@mui/material/colors";
 import { Link, Typography } from "@mui/material";
+
 export const Footer = () => {
     return (
         <Styled.Footer>

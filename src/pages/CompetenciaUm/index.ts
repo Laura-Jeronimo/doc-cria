@@ -1,0 +1,1 @@
+export { CompetenciaUm } from './CompetenciaUm'

@@ -12,8 +12,7 @@ export const Footer = styled("footer")(({ theme }) => ({
     width: "100%",
     background: theme.palette.secondary.dark,
     marginTop: theme.spacing(2),
-    gap: theme.spacing(2)
-
+    gap: theme.spacing(2),
 }))
 
 export const Icons = styled(Grid)(({ theme }) => ({

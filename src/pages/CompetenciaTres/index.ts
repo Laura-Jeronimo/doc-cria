@@ -1,0 +1,1 @@
+export { CompetenciaTres } from './CompetenciaTres'

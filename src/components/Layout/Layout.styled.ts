@@ -36,8 +36,8 @@ export const wrapperMainDiv = styled('div')(({ theme }) => ({
 export const wrapper_Footer = styled('div')({
     overflowX: 'hidden',
     flexBasis: "100%",
-
 })
+
 export const wrapper_contentDiv = styled('div')({
     overflowX: 'hidden',
     marginTop: '90px',
