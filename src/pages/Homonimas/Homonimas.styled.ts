@@ -10,8 +10,3 @@ export const Paragrafo = styled(Typography)(({ theme }) => ({
     textAlign: 'justify',
 }));
 
-
-export const Divisor = styled(Divider)(({theme}) => ({
-    width: '99%',
-    marginTop: theme.spacing(2),
-}));

@@ -3,7 +3,8 @@ import { MethodProps } from "./Request.types";
 
 export const GridRequest = styled(Grid)({
     display: 'flex',
-    alignItems: 'center',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
 });
 
 export const Method = styled('div')<MethodProps>(({ theme, method }) => ({
@@ -54,6 +55,5 @@ export const EndpointSwagger = styled('div')<MethodProps>(({theme, method}) => (
     display: 'flex',
     alignItems: 'center',
     borderRadius: theme.spacing(0.3),
-    marginLeft: theme.spacing(0.5),
     padding: theme.spacing(0.3)
 }))

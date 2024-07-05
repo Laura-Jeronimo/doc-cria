@@ -1,0 +1,1 @@
+export { Homonimas } from './Homonimas'

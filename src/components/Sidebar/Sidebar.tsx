@@ -34,128 +34,87 @@ export const Sidebar = () => {
                                 primary="Autenticação" />
                         </Styled.GridLista>
                     </Grid>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            onClick={() => navigate("/competencia-um")}
-                            primary="Competência 1" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            onClick={() => navigate("/competencia-dois")}
-                            primary="Competência 2" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            onClick={() => navigate("/competencia-tres")}
-                            primary="Competência 3" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            onClick={() => navigate("/competencia-quatro")}
-                            primary="Competência 4" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            onClick={() => navigate("/competencia-cinco")}
-                            primary="Competência 5" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            primary="Notas" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            primary="Análise de introdução" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            primary="Homônimas e parônimas" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
-                    <Styled.GridLista onClick={handleComp1Click}>
-                        <Styled.ItemListaTexto
-                            isActive={false}
-                            primary="Utilidades" />
-                        {openComp1 ? (
-                            <Styled.IconeAbrir />
-                        ) : (
-                            <Styled.IconeFechar />
-                        )}
-                    </Styled.GridLista>
-                    <Styled.CollapseItens in={openComp1} timeout="auto" unmountOnExit>
-                        
-                    </Styled.CollapseItens>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/competencia-um"}
+                                onClick={() => { navigate("/competencia-um"); }}
+                                primary="Competência um" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/competencia-dois"}
+                                onClick={() => { navigate("/competencia-dois"); }}
+                                primary="Competência dois" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/competencia-tres"}
+                                onClick={() => { navigate("/competencia-tres"); }}
+                                primary="Competência três" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/competencia-quatro"}
+                                onClick={() => { navigate("/competencia-quatro"); }}
+                                primary="Competência quatro" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/competencia-cinco"}
+                                onClick={() => { navigate("/competencia-cinco"); }}
+                                primary="Competência cinco" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/notas"}
+                                onClick={() => { navigate("/notas"); }}
+                                primary="Notas" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/analise-introducao"}
+                                onClick={() => { navigate("/analise-introducao"); }}
+                                primary="Análise de Introdução" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/ambiguas"}
+                                onClick={() => { navigate("/ambiguas"); }}
+                                primary="Homônimas e parônimas" />
+                        </Styled.GridLista>
+                    </Grid>
+
+                    <Grid>
+                        <Styled.GridLista >
+                            <Styled.ItemListaTexto
+                                isActive={location.pathname === "/utilidades"}
+                                onClick={() => { navigate("/utilidades"); }}
+                                primary="Utilidades" />
+                        </Styled.GridLista>
+                    </Grid>
                 </Styled.SidebarWrapper>
             }
         </>

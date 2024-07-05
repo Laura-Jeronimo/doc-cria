@@ -14,7 +14,7 @@ export const GridCode = styled(Stack)(({ theme }) => ({
         marginTop: theme.spacing(1)
     },
     [theme.breakpoints.up('md')]:{
-        width: '52%',
+        width: '50%',
         padding: theme.spacing(1),
     }
 }));

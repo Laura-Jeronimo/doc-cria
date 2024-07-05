@@ -19,12 +19,12 @@ export const CompetenciaCinco = () => {
 
     let response200 = ''
 
-    if (endpoint in ['entidades', 'baixoCalao']) {
+    if (['entidades', 'baixoCalao'].includes(endpoint)) {
       response200 = `{
-  "${endpoint}": [
-    {}
-  ]
-}`
+    "${endpoint}": [
+      {}
+    ]
+  }`;
     }
     else if (endpoint === 'improprios') {
       response200 = `{

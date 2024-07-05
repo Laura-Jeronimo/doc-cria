@@ -1,13 +1,17 @@
 import { Layout } from "components/Layout/Layout"
+import { EndpointsProvider } from "contexts/endpoints"
 import { Router } from "routes"
 
 function App() {
 
   return (
     <>
-    <Layout>
-      <Router />
-    </Layout>
+      <EndpointsProvider>
+        <Layout>
+          <Router />
+        </Layout>
+      </EndpointsProvider>
+
     </>
   )
 }
