@@ -18,26 +18,28 @@ export const BoxSearch = styled('div')(({ theme }) => ({
     zIndex: 3,
     maxHeight: "90vh",
     [theme.breakpoints.up("lg")]: {
-        width: '40%',
+        width: '30%',
     },
     [theme.breakpoints.down("lg")]: {
         width: '80%',
+        
     },
 }))
 
 export const StyledInput = styled(InputBase)(({ theme }) => ({
-    padding: theme.spacing(0.5),
-    marginTop: theme.spacing(1),
+    padding: theme.spacing(0.8),
+    marginTop: theme.spacing(1.5),
+    marginBottom:theme.spacing(0.8),
     borderRadius: theme.spacing(3),
-    boxShadow: "rgba(0, 0, 0, 0.25) 0px 0px 16px 0px",
+    boxShadow: "rgba(0, 0, 0, 0.25) 0px 0px 8px 0px",
 }))
 
 export const TextSearch = styled(Typography)(({ theme }) => ({
     color: theme.palette.grey[700],
     fontSize: theme.spacing(1.115),
-    fontWeight: 600
+    fontWeight: 600,
 }))
 
 export const DivResults = styled('div')(({ theme }) => ({
-    padding: theme.spacing(0.5)
+    padding: theme.spacing(0.8)
 }))
