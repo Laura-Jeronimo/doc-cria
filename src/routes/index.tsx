@@ -136,7 +136,7 @@ export const Router = () => {
                 { name: "Nota da competência 3" },
                 { name: "Nota da competência 4" },
                 { name: "Nota da competência 5" },
-                { name: "Estatísticas" },
+                { name: "Todas as estatísticas." },
             ].map(endpoint => ({
                 ...endpoint,
                 path: paths.Notas,

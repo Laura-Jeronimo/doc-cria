@@ -89,6 +89,7 @@ export const SearchIcon = styled(RiSearchLine)(({ theme }) => ({
     color: theme.palette.secondary.contrastText,
     fontSize: theme.spacing(1.5),
     marginRight: theme.spacing(0.625),
+    cursor: 'pointer'
 }));
 
 export const GridSearchMenu = styled(Grid)({

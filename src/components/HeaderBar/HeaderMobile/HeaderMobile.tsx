@@ -18,11 +18,6 @@ export const HeaderMobile = ({ isOpen, toggleDrawer }: HeaderMobileProps) => {
                             <Typography>Autenticação</Typography>
                         </Styled.ItemLista>
                     </NavLink>
-                    <NavLink to="/autenticacao">
-                        <Styled.ItemLista>
-                            <Typography>Autenticação</Typography>
-                        </Styled.ItemLista>
-                    </NavLink>
                     <NavLink to="/competencia-um">
                         <Styled.ItemLista>
                             <Typography>Competência um</Typography>

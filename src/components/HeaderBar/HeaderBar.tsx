@@ -48,7 +48,7 @@ export const HeaderBar = () => {
                         <Styled.GridValidacaoTela container responsivo>
                             <Styled.LogoImagem onClick={() => navigate("/")} src={Logo} />
                             <Styled.GridSearchMenu>
-                                <Styled.SearchIcon onClick={() => navigate('/')} />
+                                <Styled.SearchIcon onClick={() => setOpenModalSearch(true)} />
                                 <Styled.Icon
                                     size="large"
                                     aria-label="show more"

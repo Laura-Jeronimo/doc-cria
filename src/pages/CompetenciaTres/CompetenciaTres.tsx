@@ -115,7 +115,7 @@ export const CompetenciaTres = () => {
             <Endpoint
                 method="post"
                 url="apicompetenciatres.cria.net.br/api/v1/services/ditadospopulares"
-                name="Ditados populares."
+                name="Ditados populares"
                 description="Identifica o uso de ditados populares."
                 headers={Headers}
                 parameters={Parameters}
